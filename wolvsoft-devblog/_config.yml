@@ -22,8 +22,8 @@ title: Mandy Chen's Dev Blog
 email: mandyche@umich.edu
 description: >- # this means to ignore newlines until "baseurl:"
   A dev blog documenting my journey at WolverineSoft Studios.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/wolvsoft-devblog" # the subpath of your site, e.g. /blog
+url: "mandyschen.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  mandyschen
 
