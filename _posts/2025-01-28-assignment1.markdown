@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Assignment #1: Week 1/26 to 2/9"
-date:   2025-01-28 23:22:49 -0500
+date:   2025-01-26 23:22:49 -0500
 categories: assignments
 ---
 
@@ -22,7 +22,6 @@ Prior to this sprint, I had added the button to bring up the build menu, created
 *Video of state of UI/UX before this sprint.*
 
 This had worked relatively well so far, but I would have to make various changes in this sprint.
-
 
 ## Adding Animations
 In this sprint, I wanted to add an animation that would play after the building was deselected. Similar to how the buttons "rose up" into frame, I wanted the buttons to "sink down" out of frame when the building was deselected. However, because of the way I had coded the animation, I would deactivate the panel before the animation could play, therefore making it impossible for the animation to play.
@@ -59,19 +58,54 @@ For Upgrade and Destroy, I was fortunate that there were existing methods that I
 </video>
 *Video of button functionality.*
 
+## Finalized Implementations
+Later on, the designs for the UI/UX were finalized, and I was assigned to recreate the Figma file that outlined what the finalized UI/UX interface should look like. We decided to split up the work, and I would work on implementing the build menu and the resources header.
+
+<img src="{{ 'assets/hw1/figma-sc.png' | relative_url }}">
+*The Figma file I would be reimplementing.*
+
+## Resources Header
+The resource header was mostly a cosmetic overhaul. The functionality remained relatively similar to before, but all of the sprites had to be changed and moved to match the Figma file. While this seemed relatively simple at first, there were a lot of small nuances that came up that made the process more difficult.
+
+First, the Fossil resource was oddly spaced from the other resources. Therefore, it was impossible to use a Horizontal Layout component to create a consistent and even spacing. I calculated the locations that each item in the header should be, and had to do a lot of minor shifting to more closely match the Figma file.
+
+Next, the text was difficult to deal with. At first, I was changing the font size and position, but I realized that the issue was actually that the textboxes weren't lining up properly anymore. So, I went through and adjusted the boxes to stay within a certain area on their designated resource header to ensure that the text stayed neat and readable.
+
+Furthermore, I had to change the anchor points so that as the screen changed sizes, the header would still be visible and not overlap anything important or go off the screen entirely.
+
+This process was time consuming because it involved a lot of tiny shifts and edits to things like font size, position, colors, etc. to make it match the Figma file as closely as possible.
+
+## Building Menu
+Creating the building menu was far more difficult than I anticapated. I had previously assumed it would be similar to the resources header, where it was mostly a cosmetic replacement, but there were a lot of small differences that I added/removed for ease of use. There were also a lot of strange issues that arose that were not present in the previous implementation.
+
+The first bug that arose was that the default image would show up when opening the build menu. This was not preferred because the building could not be placed, and it shouldn't be an option at all. I tried to figure out workarounds including triggering the contractor building to be the default when opening the menu, but I decided that instead, I would disable where it showed the building information and enable it when something actually buildable was clicked instead. This was more similar to how the previous implementation worked and was more immediately understandable.
+
+There was another bug that arose when I tried to implement disabling the build option. I wanted to make it so that when you clicked the build menu button again, it would remove the edit mode so the player was no longer placing buildings. The way I implemented it would make it so that only the internal cancel button would disable it, which was not what I wanted. I realized that the reason why I wasn't able to turn it off by directly pressing on the build menu button again was because I was mismanaging states. Therefore, I fixed how I managed the states and was able to make the buttons function how I intended.
+
+<img src="{{ 'assets/hw1/old-ui-ux-sc.png' | relative_url }}">
+*What the previous build menu looked like.*
+
+<img src="{{ 'assets/hw1/new-ui-ux-sc.png' | relative_url }}">
+*What the build menu currently looks like.*
+
+<video width="640" height="360" controls>
+  <source src="{{ 'assets/hw1/new-ui-ux.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*Video showing the usability of the build button and building menu.*
+
 ## Conclusions
 The time management strategies I used was working in long blocks of time. This helped get a lot done because I was able to enter a "zone" as I was working. Furthermore, because I didn't interrupt my work sessions for long periods of time, I didn't have to spend as much time thinking about what I did previously and what I needed to now accomplish. 
 
 In the future, I think a good strategy would be to not sink too much time into something that isn't quite working out, especially if it is something that doesn't seem maintainable and if strange and awkward work arounds are needed to get it to work. This would help to keep progress moving forwards versus sinking time into something fruitless.
 
 ## Hours Breakdown
-# Week of 1/26
-- Meeting: 2 hours
+- Meetings: 4 hours
 - Editing previous animation implementation: 3.5 hours
 - Overhauling animations, creating more animations: 5 hours
 - Adding button functionality: 2 hours
+- Resources header: 3 hours
+- Building menu: 4 hours
+- Testing functionality: 3 hours
 
-# Week of 2/2
-- Meeting: 2 hours
-
-# Total
+Total: 24.5 hours
