@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Assignment #2: Week 2/9 to 2/23"
-date:   2025-02-20 23:22:49 -0500
+date:   2025-02-09 23:22:49 -0500
 categories: assignments
 ---
 
