@@ -72,6 +72,8 @@ I decided to watch:
 2. Death to the Three act Sturure! Toward a Unique Structure for Game Narratives
 3. You Don't Need a F-ing Publisher
 4. Sunset Overdrive: Transitioning from Linear to Open World Design
+5. Building a Paper Prototype For Your Narrative Design
+6. Less is More: Designing Awesome AI for Games
 
 While they were all extremely interesting, and I learned a lot from listening to their perspectives and lessons, the talk "You Don't Need a F-ing Publisher" really stood out to me. 
 
@@ -81,12 +83,12 @@ I think it's uncommon for conversations about publishing to take place in academ
 I think one strategy that I want to do in the future is to know when to give up and restart and use the knowledge I gained in that failure to improve. I kept on trying to resolve merge conflicts from a branch that I had a lot of work done on, and I was unwilling to recognize that I needed to start from scratch because of some mistakes I made way earlier on in the branch. Fortunately, I was able to recreate most of what I had done in a far more efficient way because of what I had previously learned, and I recognize that I should have done this after I had been struggling with the merge conflicts the first time around.
 
 ## Hours Breakdown
-- Meeting: 4 hours
+- Meeting: 2 hours
 - Main tower UI to match Figma: 3 hours
 - Try to fix merge errors: 2 hours
 - Reimplement changes (smithy, tavern, hire, etc.): 6 hours
 - Dungeon UI to match Figma: 3 hours
 - Implement dungeon mini game: 5 hours
-- Watch GDC talks: 2 hours
+- Watch GDC talks: 4 hours
 
 Total: 25 hours
