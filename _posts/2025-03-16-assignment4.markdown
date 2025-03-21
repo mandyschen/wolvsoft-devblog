@@ -40,12 +40,53 @@ With my new knowledge, I was able to more efficiently create the menus for the s
 </video>
 *The finished UI/UX for the other buildings.*
 
+## The Dungeon
+For my next task, I was assigned to work on implementing the UI for the dungeon. This was a relatively straightforward task, but it involved a lot of meticulous work. Fortunately, the fact that the UI had repeatable parts that could be handled with prefabs made the process a lot quicker.
+
+<img src="{{ 'assets/hw4/dungeon-figma-ui.png' | relative_url }}">
+*What the dungeon UI should look like according to the Figma.*
+
+<img src="{{ 'assets/hw4/finished-dungeon-ui.png' | relative_url }}">
+*What the dungeon UI looks like after I implemented it.*
+
+An extension of this task included implementing the dungeon minigame. I was unsure how to handle this particular task because it appeared as though there was some groundwork for the mini game laid down, but it wasn't particularly fleshed out. Also, what currently existed was with text instead of actual graphics described by the Figma.
+
+When I was implementing the game, I made sure that I was including all of the situations inside the Figma. I saw in previous discussions about the dungeon that we intended the dungeons to have specific routes, so while I currently made the game situations randomly choose which "situation" to be in, I ensured that the code was easily modifiable to be able to take into account that the paths won't be random/arbitrary in the future.
+
+<img src="{{ 'assets/hw4/dungeon-mini-game-figma.png' | relative_url }}">
+*Some of the scenarios in the dungeon mini game described in the Figma.*
+
+When I was done implementing the game, I made sure that I playtested a few times. I included a few details like enemy health and attacks, player health, disabling buttons in certain situations, etc. that I only caught after playtesting and realizing that certain things were needed to make the game more effective and "bug-proof." 
+
+<video width="640" height="360" controls>
+  <source src="{{ 'assets/hw4/mini-game-ui-trimmed.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*The finished UI/UX for the main tower.*
+
+## Game Developers Conference 
+Unfortunately, I was not able to attend the Game Developers Conference with the team, but I decided to watch a few of the most popular talks to gain some new perspectives. 
+
+I decided to watch:
+1. Video Game Rx: Narratives as Therapy
+2. Death to the Three act Sturure! Toward a Unique Structure for Game Narratives
+3. You Don't Need a F-ing Publisher
+4. Sunset Overdrive: Transitioning from Linear to Open World Design
+
+While they were all extremely interesting, and I learned a lot from listening to their perspectives and lessons, the talk "You Don't Need a F-ing Publisher" really stood out to me. 
+
+I think it's uncommon for conversations about publishing to take place in academic settings (such as in a class). However, I think if someone wanted to take the leap to publish a game, it's important to know how to not get taken advantage of by predatory publishers. The speaker was humorous, but he was also extremely straightforward and made sure that the audience understood publishers gave the basic needs (funding, marketing, production, and distribution) but should also provide more to be truly beneficial (creativity and enthusiasm, a state and the spotlight, a personal relationship, and brutal honesty). I think he delivered the information in a great way, and in the future, if I want to publish my own game, I will definitely keep his ideas in mind.
+
 ## Conclusions
+I think one strategy that I want to do in the future is to know when to give up and restart and use the knowledge I gained in that failure to improve. I kept on trying to resolve merge conflicts from a branch that I had a lot of work done on, and I was unwilling to recognize that I needed to start from scratch because of some mistakes I made way earlier on in the branch. Fortunately, I was able to recreate most of what I had done in a far more efficient way because of what I had previously learned, and I recognize that I should have done this after I had been struggling with the merge conflicts the first time around.
 
 ## Hours Breakdown
 - Meeting: 4 hours
-- Main tower UI: 3 hours
+- Main tower UI to match Figma: 3 hours
 - Try to fix merge errors: 2 hours
 - Reimplement changes (smithy, tavern, hire, etc.): 6 hours
+- Dungeon UI to match Figma: 3 hours
+- Implement dungeon mini game: 5 hours
+- Watch GDC talks: 2 hours
 
-Total: 13 hours
+Total: 25 hours
