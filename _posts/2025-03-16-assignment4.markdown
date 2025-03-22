@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Assignment #4: Week 3/9 to 3/23 (in progress)"
+title:  "Assignment #4: Week 3/9 to 3/23"
 date:   2025-03-09 21:22:49 -0500
 categories: assignments
 ---
