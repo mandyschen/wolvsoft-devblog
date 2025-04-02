@@ -54,15 +54,32 @@ I got feedback that the cancel button in the main tower should toggle to the sta
 
 *The fixed dungeon UI.*
 
-## Conclusions
+## Header Implementation
+One of my tasks for this week was to implement the graphic and final implementation for the header. This was a relative straightforward process, and because there was already a base that closely matched where everything in the header was meant to go, it wasn't too difficult. However, I accidentally made all of my changes outside of the prefab, so I had to restart my progress and make sure that I was making changes inside of the prefab to prevent merge and other issues. It was also surprisingly difficult to extract all of the elements from the Figma file. I often had to delete/hide certain items to make sure that I was getting a "clean" version of the image without text or other elements that I would need to specifically add in Unity.
 
+<img src="{{ 'assets/hw5/new-header.png' | relative_url }}">
+
+*The new header*
+
+## Smithy Implementation
+Another one of my tasks was to implement the final version of the smithy UI. This was far less straightforward than the header because things often did not map one to one with the previous implementation. I had to make a few decisions regarding how I should connect the different pieces in the menu, and it was definitely an interesting learning experience. There was a lot of minor tweaks that I had to make in order to make sure that everything not only worked, but also closely matched what was in the Figma. However, I ultimately think that I did a good job and that the smithy UI was able to closely match what was described.
+
+<video width="640" height="360" controls>
+  <source src="{{ 'assets/hw5/smithy-new-ui.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+*The final smithy UI.*
+
+## Conclusions
+I think I learned a lot about how to manage my time effectively. I did a large bulk of the work earlier in the week, so that I could receive feedback and ask for clarification on certain things throughout the week, and I wasn't rushing towards the end to finish my assigned tasks. I think this was a great decision because I was really able to make things that I was proud of, and I felt as though I was never under a ton of stress, even though I had a lot of things on my to do list this week.
 
 ## Hours Breakdown
 - Meeting: 4 hours
 - IGDA event: 2.5 hours
 - Drawing rain splash animation: 1.5 hours
 - Rain effects: 6 hours
-- Resolve merge conflicts and other changes:
-- 
+- Resolve merge conflicts and other changes: 2
+- Header: 1.5
+- Smithy: 6.5
 
-Total: 
+Total: 24
